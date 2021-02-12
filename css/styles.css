@@ -1,0 +1,192 @@
+
+/*  Global styles 
+----------------------------------------*/
+html {
+  box-sizing: border-box;
+  }
+*, *::before, *:after {
+  box-sizing: inherit;
+}  
+body {
+  color: #292929ff;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+img {
+    width: 300px;
+}
+a {
+  color:white;
+}
+a:hover {
+  text-decoration: none;
+}
+h1 {
+  font-size: 30px;
+  line-height: 1.25;
+}
+h2 {
+  margin: 0;
+  font-size: 24px;
+  font-style: italic;
+}
+h1, h2 {
+  font-family: 'Work Sans', sans-serif;
+}
+
+h3 {
+  font-family: 'Open Sans';
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 700;
+}
+.content-wrap {
+  max-width: 900px;
+  width: 85%;
+  margin: 0 auto;
+
+}
+.divider > section {
+  overflow: hidden;
+  border-bottom: 2px double #292929ff;
+  padding: 20px 0;
+} 
+.divider > section:last-of-type {
+  border-bottom-style: none;
+} 
+/*  Profile
+----------------------------------------*/
+header {
+  font-style: italic;
+  color: white;
+  background-image: url(../images/philipp-katzenberger-iIJrUoeRoCQ-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 150px;
+  }
+  header p {
+    font-size:20px ;
+  }
+/*  Projects
+----------------------------------------*/
+.projects {
+  background: #b7cac2;
+}
+
+.projects a {
+  color: #292929ff;
+}
+
+
+.projects .btn {
+  color:cornsilk;
+  background: #a9a9a9;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.projects .btn:hover {
+  background: rgba(41, 41, 41, 50%);
+}
+
+.project-item {
+  overflow: hidden;
+  
+}
+
+/*  Work Experience 
+----------------------------------------*/
+.work-experience {
+  background-color: #e6fafcff;
+}
+.job-item ul {
+  list-style-type: none;
+  /* padding: 0; */
+}
+
+.bussines {
+  color:#292929ff;
+}
+/*  Education
+----------------------------------------*/
+
+
+/*  Certifications
+----------------------------------------*/
+.certifications a{
+  color: #292929ff;
+}
+
+/*  Contact Info
+----------------------------------------*/
+footer {
+  background:darkgray ;
+}
+.contact-list {
+  list-style: none;
+  padding: 15px;
+}
+.contact-list a {
+  padding: 10px;
+  text-decoration: none; 
+}
+
+.contact-list img {
+  width: 16px;
+}
+/*  Respomsive
+----------------------------------------*/
+@media screen and (min-width: 800px) {
+  .content-wrap {
+    padding: 40px 0;
+  }
+  
+  footer{
+    text-align: center;
+  }
+ 
+  .job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+  .bgimage {
+    background-image: url(../images/sharon-mccutcheon-unsplash.jpg);
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 100px;
+  }
+  .project-item img {
+    float: left;
+    margin-right: 20px;
+  }
+  .bgimage h3~p {
+    width: 60%;
+  }
+  .contact-list {
+  display: flex;
+  justify-content: center;
+  }
+  .contact-list a {
+    padding: 10px;
+  }
+  
+}
+
+@media screen and (max-width: 799) {
+  h1 {
+    font-size: 20;
+    line-height: 0.9 ;
+  }
+  h2 {
+    line-height: 1;
+  }
+  .contact-list a {
+    padding: 2px;
+  }
+}
